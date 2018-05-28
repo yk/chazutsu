@@ -272,8 +272,8 @@ class Route():
         self.r._batch_def[self.column] = c
         return self
 
-    def as_dictid(self, labels=(), distincts=False, num_class=-1):
-        c = cv.DictionalyConverter(labels, distincts, num_class)
+    def as_dictid(self, labels=(), distincts=False):
+        c = cv.DictionalyConverter(labels, distincts)
         self.r._batch_def[self.column] = c
         return self
 
